@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Passions+Conflict&display=swap');
+.Home{
+   
+}
+.head{
+    
+    height: 7em;
+    text-align: center;
+    
+}
+
+.Header{
+
+    text-align: center;
+    font-family: "Passions Conflict", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 6em;
+    color:#fbfcd3;
+    position: relative;
+    display: inline-block;
+    
+}
+
+.Header::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 2px; /* Толщина подчеркивания */
+    background-color: #fbfcd3; /* Цвет подчеркивания */
+    transform: scaleX(0.6);
+    transition: transform 0.5s ease;
+}
+
+.Header:hover::after {
+    transform: scaleX(0.3);
+}
+.Bgallery{
+    color: #000;
+}
+.Bauthors{
+    color: #000;
+}
+.Bgenre{
+    color: #000;
+}
