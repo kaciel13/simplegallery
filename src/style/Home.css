@@ -27,18 +27,20 @@
     content: '';
     position: absolute;
     left: 0;
-    right: 0;
-    bottom: 0;
-    height: 1px; /* Толщина подчеркивания */
-    background-color: var(--color); /* Цвет подчеркивания */
+    right: 0;    
+    bottom: 0; /* Убедитесь, что это значение корректно */
+    height: 2px; /* Толщина подчеркивания */
+    background-color: transparent; /* Убираем фон */
+    border-bottom: 2px solid var(--color); /* Используем границу для подчеркивания */
+    border-radius: 100%; /* Закругляем углы */
     transform: scaleX(0.6);
     transition: all 0.5s ease;
 }
 
 .Header:hover::after {
     bottom: 0.08em;
-    transform: scaleX(0.3);
- 
+    transform: scaleX(0.4);
+    
 }
 .Header:hover{
     font-size: 6.3em;
