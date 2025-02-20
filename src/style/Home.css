@@ -1,13 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Passions+Conflict&display=swap');
 #root{
-    --color: #fbfcd3
+    --color: #ffffff;
 }
 .Home {
     /* #TODO Доделать дизайн страницы */
 }
 
 .head {
-    height: 7em;
+    height: 6em;
     text-align: center;
 }
 
@@ -46,87 +46,135 @@
     font-size: 6.3em;
 }
 
-.Buttons {
-    display: flex; /* Используем Flexbox для расположения элементов */
-    flex-direction: column; /* Располагаем элементы вертикально */
-    align-items: center; /* Центрируем элементы по горизонтали */
-    height: auto; /* Автоматическая высота */
-    width: 100%; /* Задаем ширину 100% для контейнера */
-}
-
-.Bgallery {
-    display: inline-block;
-    margin-top: 3em;
-    height: 21em;
-    width: 90em;
-    padding: 0;
-    background-color: #ffffff;
-}
-
-.Bcontainer {
-    display: flex; /* Используем Flexbox для расположения элементов в строку */
-    justify-content: center; /* Центрируем элементы по горизонтали */
-    align-items: center; /* Центрируем элементы по вертикали */
-    margin-top: 2em; /* Отступ сверху для разделения */
-}
-
-.Bauthors {
-    padding: 0;
-    margin: 0;
-    height: 21em;
-    width: 45em;
-    background-color: #636363;
-  
-}
-
-.Bgenre {
-    padding: 0;
-    margin: 0;
-    height: 21em;
-    width: 45em;
-    background-color: #242424;
-   
-}
-
 .linkStyle {
     text-decoration: inherit;
     color: inherit;
 }
 
 
-footer {
-    font-size: 2.2em;
-    font-family: "Passions Conflict", serif;
-    font-weight: 400;
-  
-
-}
-
-.footer {
-    text-align: center;
-    position: fixed; /* Подвал как приклеенный */
-    bottom: 0; /* Фиксация снизу */
-    left: 0; /* К началу слева */
-    right: 0; /* Без отступов справа */
-    height: 60px; /* Задаем высоту */
-    color: var(--color);
-    transition: all 300ms;
-}
-.footer:hover{
-    height: 65px;
-    color:aliceblue;
-    font-size: 2.6em;
-}
-.year {
-    text-align: center;
-    position: fixed; /* Подвал как приклеенный */
-    bottom: 0; /* Фиксация снизу */
-    left: 0; /* К началу слева */
-    right: 0;
-    color:var(--color);
-}
-.Flex{
-    display: flex;
-    flex-direction: row; /* Располагаем элементы вертикально */
+.buttons{
     align-items: center;
+    display: flex;
+    width: 100vw;
+    margin-top: 3em;
+    flex-direction: column;
+    margin-bottom: 3em;
+    
+}
+
+.gallery{
+    background-image: url("images/gallery.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 70vw, 37vh;
+    text-align: center;
+    background-color: aqua;
+    height: 37vh;
+    width: 70vw;
+    
+}
+.lowbuttons{
+    display: flex;
+}
+.genre{
+    background-image: url("images/genre.jpg");
+    background-repeat: no-repeat;
+    background-size: 35vw, 37vh;
+    background-position: center;
+    text-align: center;
+    background-color: blueviolet;
+    height: 37vh;
+    width: 35vw;
+}
+.author{
+    background-image: url("images/authors.png");
+    background-repeat: no-repeat;
+    background-size: 70vw, 37vh;
+    background-position: center;
+    text-align: center;
+    background-color: brown;
+    height: 37vh;
+    width: 35vw;
+}
+
+
+
+
+
+
+@media (max-width: 1000px){
+
+     .lowbuttons{
+        flex-direction: column;
+     }
+     .genre{
+        width: 85vw;
+     }    
+     .author{
+        width: 85vw;
+     }
+     .gallery{
+        width: 85vw;
+    }
+}
+@media(max-width: 768px){
+    .Header {
+        font-size: 4em;
+    }
+    .Header:hover{
+        font-size: 4.4em;
+    }
+    .Header:hover::after {
+        bottom: 0.04em;
+        transform: scaleX(0.4);
+        
+    }
+    .gallery{
+        width: 90vw;
+    }
+    .genre{
+        width: 90vw;
+     }    
+     .author{
+        width: 90vw;
+     }
+     .buttons{
+        margin-top: 0.5em;
+        margin-bottom: 2em;
+    }
+
+}
+
+@media(max-width: 400px){
+    .Header {
+        font-size: 3.8em;
+    }
+    .Header:hover{
+        font-size: 3.8em;
+    }
+    .Header:hover::after {
+        bottom: 0em;
+        transform: scaleX(0.6);
+        
+    }
+    .buttons{
+        margin-top: 0em;
+        margin-bottom: 1em;
+    }
+    .gallery{
+        width: 90vw;
+    }
+    .genre{
+        width: 90vw;
+     }    
+     .author{
+        width: 90vw;
+     }
+
+    
+
+}
+
+.footer{
+    text-align: center;
 }
