@@ -20,6 +20,7 @@
     color: var(--color);
     position: relative;
     display: inline-block;
+    transition: all 0.5s ease;
 }
 
 .Header::after {
@@ -31,11 +32,16 @@
     height: 1px; /* Толщина подчеркивания */
     background-color: var(--color); /* Цвет подчеркивания */
     transform: scaleX(0.6);
-    transition: transform 0.5s ease;
+    transition: all 0.5s ease;
 }
 
 .Header:hover::after {
+    bottom: 0.08em;
     transform: scaleX(0.3);
+ 
+}
+.Header:hover{
+    font-size: 6.3em;
 }
 
 .Buttons {
