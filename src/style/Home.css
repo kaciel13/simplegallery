@@ -1,25 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Passions+Conflict&display=swap');
-.Home{
-   
+#root{
+    --color: #fbfcd3
 }
-.head{
-    
+.Home {
+    /* #TODO Доделать дизайн страницы */
+}
+
+.head {
     height: 7em;
     text-align: center;
-    
 }
 
-.Header{
-
+.Header {
     text-align: center;
     font-family: "Passions Conflict", serif;
     font-weight: 400;
     font-style: normal;
     font-size: 6em;
-    color:#fbfcd3;
+    color: var(--color);
     position: relative;
     display: inline-block;
-    
 }
 
 .Header::after {
@@ -28,8 +28,8 @@
     left: 0;
     right: 0;
     bottom: 0;
-    height: 2px; /* Толщина подчеркивания */
-    background-color: #fbfcd3; /* Цвет подчеркивания */
+    height: 1px; /* Толщина подчеркивания */
+    background-color: var(--color); /* Цвет подчеркивания */
     transform: scaleX(0.6);
     transition: transform 0.5s ease;
 }
@@ -37,12 +37,88 @@
 .Header:hover::after {
     transform: scaleX(0.3);
 }
-.Bgallery{
-    color: #000;
+
+.Buttons {
+    display: flex; /* Используем Flexbox для расположения элементов */
+    flex-direction: column; /* Располагаем элементы вертикально */
+    align-items: center; /* Центрируем элементы по горизонтали */
+    height: auto; /* Автоматическая высота */
+    width: 100%; /* Задаем ширину 100% для контейнера */
 }
-.Bauthors{
-    color: #000;
+
+.Bgallery {
+    display: inline-block;
+    margin-top: 3em;
+    height: 21em;
+    width: 90em;
+    padding: 0;
+    background-color: #ffffff;
 }
-.Bgenre{
-    color: #000;
+
+.Bcontainer {
+    display: flex; /* Используем Flexbox для расположения элементов в строку */
+    justify-content: center; /* Центрируем элементы по горизонтали */
+    align-items: center; /* Центрируем элементы по вертикали */
+    margin-top: 2em; /* Отступ сверху для разделения */
+}
+
+.Bauthors {
+    padding: 0;
+    margin: 0;
+    height: 21em;
+    width: 45em;
+    background-color: #636363;
+  
+}
+
+.Bgenre {
+    padding: 0;
+    margin: 0;
+    height: 21em;
+    width: 45em;
+    background-color: #242424;
+   
+}
+
+.linkStyle {
+    text-decoration: inherit;
+    color: inherit;
+}
+
+
+footer {
+    font-size: 2.2em;
+    font-family: "Passions Conflict", serif;
+    font-weight: 400;
+  
+
+}
+
+.footer {
+    text-align: center;
+    position: fixed; /* Подвал как приклеенный */
+    bottom: 0; /* Фиксация снизу */
+    left: 0; /* К началу слева */
+    right: 0; /* Без отступов справа */
+    height: 60px; /* Задаем высоту */
+    color: var(--color);
+    transition: all 300ms;
+}
+.footer:hover{
+    height: 65px;
+    color:aliceblue;
+    font-size: 2.6em;
+}
+.year {
+    text-align: center;
+    position: fixed; /* Подвал как приклеенный */
+    bottom: 0; /* Фиксация снизу */
+    left: 0; /* К началу слева */
+    right: 0;
+    color:var(--color);
+}
+.Flex{
+    display: flex;
+    flex-direction: row; /* Располагаем элементы вертикально */
+    align-items: center;
 }
