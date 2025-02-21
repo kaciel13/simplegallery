@@ -80,6 +80,8 @@
     width: 70vw;
     transition: box-shadow 0.6s ease-in;
     display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .lowbuttons{
@@ -162,7 +164,7 @@
      .gallery{
 
         width: 85vw;
-        background-size: 85vw, 20vh;
+        background-size: 100vw;
     }
 }
 @media(max-width: 768px){
@@ -179,7 +181,7 @@
     }
     .gallery{
         width: 90vw;
-        background-size: 120vw;
+        background-size: 130vw;
     }
     .genre{
         width: 90vw;
