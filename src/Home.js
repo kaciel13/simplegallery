@@ -9,11 +9,11 @@ function Home() {
           <header className="Header"><Link to="/" className="linkStyle">Simple Gallery</Link></header>
         </div>
         <div className='buttons'>
-          <div className='gallery'><div className='text'>Перейти в галлерию...</div></div>
+          <div className='gallery'><div className='shade_box'><p className='textbutton'>Перейти в галлерию...</p></div></div>
 
           <div className='lowbuttons'>
-            <div className='genre'><div className='text'>Перейти к жанрам...</div></div>
-            <div className='author'><div className='text'>Перейти к авторам...</div></div>
+            <div className='genre'><div className='shade_box'><p className='textbutton'>Перейти к жанрам...</p></div></div>
+            <div className='author'><div className='shade_box'><p className='textbutton'>Перейти к авторам...</p></div></div>
           </div>
           
         </div>
