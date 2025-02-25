@@ -117,7 +117,6 @@
     justify-content: center;
 }
 .shade_box{  /*Полупрозрачный бокс с текстом*/
-    text-shadow: 0px 0px 0px var(--color);
     font-family: "Great Vibes", serif;
     font-weight: 400;
     font-style: normal;
