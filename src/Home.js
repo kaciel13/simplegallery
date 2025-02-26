@@ -12,7 +12,7 @@ function Home() {
           <div className='gallery'><div className='shade_box'><p className='textbutton'>Перейти в галлерию...</p></div></div>
 
           <div className='lowbuttons'>
-            <div className='genre'><div className='shade_box'><p className='textbutton'>Перейти к жанрам...</p></div></div>
+            <div className='genre'><Link to="/Genres" className='link'><div className='shade_box'><p className='textbutton'>Перейти к жанрам...</p></div></Link></div>
             <div className='author'><div className='shade_box'><p className='textbutton'>Перейти к авторам...</p></div></div>
           </div>
           

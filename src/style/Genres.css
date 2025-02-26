@@ -3,12 +3,12 @@
 #root{
     --color: rgb(255, 255, 255);
 }
-.Home {
+.Genres {
     height: auto;
     width: 100vw;
     background-image: url("images/tile.jpg");
     background-repeat: repeat;
-    background-size: 500px, 500px;
+    background-size: 200px, 200px;
     /* #TODO Доделать дизайн страницы */
 }
 
@@ -22,7 +22,7 @@
     text-align: center;
     font-family: "Passions Conflict", serif;
   
-    font-weight: 300px;
+    font-weight: 300;
     font-style: normal;
     font-size: 6em;
     color: var(--color);
@@ -71,51 +71,43 @@
     
 }
 
-.gallery{
-    overflow: hidden;
-    background-image: url("images/gallery.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 70vw;
-    height: 37vh;
-    width: 70vw;
-    transition: box-shadow 0.6s ease-in;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
 
-.lowbuttons{
+.row{
     display: flex;
 }
-.genre{
-    
+.genres{
     overflow: hidden;
-    background-image: url("images/genre.jpg");
     background-repeat: no-repeat;
-    background-size: 45vw;
+    background-size: cover;
     background-position: center;
     height: 37vh;
-    width: 35vw;
+    width: 30vw;
     transition: box-shadow 0.3s ease-out;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.author{
-    overflow: hidden;
-    background-image: url("images/authors.jpg");
-    background-repeat: no-repeat;
-    background-size: auto;
-    background-position: center;
-    backdrop-filter: blur(5x);
-    height: 37vh;
-    width: 35vw;
-    transition: box-shadow 0.6s ease-in;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+
+.bg-portret {
+    background-image: url("./images/portret.jpg"); 
 }
+.bg-scenery {
+    background-image: url("./images/scenery.JPG"); 
+}
+.bg-history {
+    background-image: url("./images/history.jpg"); 
+}
+.bg-still-life {
+    background-image: url("./images/still-life.jpg"); 
+}
+.bg-genre-paint {
+    background-image: url("./images/genre-paint.jpg"); 
+}
+.bg-abstraction {
+    background-image: url("./images/abstraction.jpg"); 
+}
+
+
 .shade_box{  /*Полупрозрачный бокс с текстом*/
     font-family: "Great Vibes", serif;
     font-weight: 400;
@@ -135,14 +127,14 @@
 
 
 .gallery:hover,
-.genre:hover,
+.genres:hover,
 .author:hover{ 
     box-shadow: 0px 0px 60px rgb(32, 32, 32);
     z-index: 3;
 
 }
 .gallery:hover .shade_box,
-.genre:hover .shade_box,
+.genres:hover .shade_box,
 .author:hover .shade_box {
     opacity: 1; /* Показать текст при наведении */
 }
@@ -298,7 +290,7 @@
     font-size: 2em;
 }
 .link{
-    text-decoration: none; /* Убирает подчеркивание */
+    text-decoration: none; 
     height: inherit;
     width: inherit;
 }
