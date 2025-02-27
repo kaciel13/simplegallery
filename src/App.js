@@ -1,4 +1,5 @@
 import './style/App.css';
+import './style/general.css'
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from './Home.js';
 import Genres from './Genres.js'

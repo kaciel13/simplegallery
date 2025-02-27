@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 function Home() {
     return (
      
-      <div className="Home">
+      <div className="back">
         <div className='head'>
           <header className="Header"><Link to="/" className="linkStyle">Simple Gallery</Link></header>
         </div>

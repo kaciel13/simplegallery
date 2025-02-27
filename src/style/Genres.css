@@ -1,67 +1,6 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Passions+Conflict&display=swap');
-#root{
-    --color: rgb(255, 255, 255);
-}
-.Genres {
-    height: auto;
-    width: 100vw;
-    background-image: url("images/tile.jpg");
-    background-repeat: repeat;
-    background-size: 200px, 200px;
-    /* #TODO Доделать дизайн страницы */
-}
-
-.head {
-    text-shadow: 0px 0px 50px rgb(0, 0, 0);
-    height: 6em;
-    text-align: center;
-}
-
-.Header {
-    text-align: center;
-    font-family: "Passions Conflict", serif;
-  
-    font-weight: 300;
-    font-style: normal;
-    font-size: 6em;
-    color: var(--color);
-    position: relative;
-    display: inline-block;
-    transition: all 0.5s ease;
-}
-
-.Header::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    right: 0;    
-    bottom: 0; /* Убедитесь, что это значение корректно */
-    height: 2px; /* Толщина подчеркивания */
-    background-color: transparent; /* Убираем фон */
-    border-bottom: 2px solid var(--color); /* Используем границу для подчеркивания */
-    border-radius: 100%; /* Закругляем углы */
-    box-shadow: 0px 0px 50px rgb(0, 0, 0);
-    transform: scaleX(0.6);
-    transition: all 0.5s ease;
-}
-
-.Header:hover::after {
-    bottom: 0.08em;
-    transform: scaleX(0.4);
-    
-}
-.Header:hover{
-    font-size: 6.3em;
-}
-
-.linkStyle {
-    text-decoration: inherit;
-    color: inherit;
-}
-
-
-.buttons{
+.genres-buttons{
+    height: inherit;
     align-items: center;
     display: flex;
     width: 100vw;
@@ -73,7 +12,11 @@
 
 
 .row{
+    width: 90vw;  /*Соотношение 1/3 для ширины row/genres*/
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
 .genres{
     overflow: hidden;
@@ -126,171 +69,64 @@
 
 
 
-.gallery:hover,
-.genres:hover,
-.author:hover{ 
+
+.genres:hover{ 
     box-shadow: 0px 0px 60px rgb(32, 32, 32);
     z-index: 3;
 
 }
-.gallery:hover .shade_box,
-.genres:hover .shade_box,
-.author:hover .shade_box {
+
+.genres:hover .shade_box{
     opacity: 1; /* Показать текст при наведении */
 }
 .textbutton{
     text-align: center;
 }
-
 @media (max-width: 1000px){
-
-     .lowbuttons{
-        flex-direction: column;
-     }
-     .genre{
-        width: 85vw;
-        background-size: 90vw;
-     }    
-     .author{
-        width: 85vw;
-        background-size: 90vw;
-     }
-     .gallery{
-
-        width: 85vw;
-        background-size: 100vw;
+    .row{
+        width: 90vw;/*Соотношение 1/2 для ширины row/genres*/
+    }
+    .genres{
+        width: 45vw;
+    }
+    
+    
+}
+@media(max-width: 500px){
+    .genres-buttons{
+        margin-top: 0em;
+        margin-bottom: 0.5em;
+    }
+    .row{
+        width: 90vw;/*Соотношение 1/1 для ширины row/genres*/
+    }
+    .genres{
+        width: 90vw;
     }
 }
+
 @media(max-width: 768px){
-    .Header {
-        font-size: 4em;
-    }
-    .Header:hover{
-        font-size: 4.4em;
-    }
-    .Header:hover::after {
-        bottom: 0.04em;
-        transform: scaleX(0.4);
-        
-    }
-    .gallery{
-        width: 90vw;
-        background-size: 130vw;
-    }
-    .genre{
-        width: 90vw;
-        background-size: 100vw;
-     }    
-     .author{
-        width: 90vw;
-        background-size: 90vw;
-     }
-     .buttons{
-        margin-top: 0.5em;
-        margin-bottom: 2em;
-    }
+    .genres-buttons{
+       margin-top: 0.5em;
+       margin-bottom: 2em;
+   }
+   
 
 }
-
-
-
-
-
-
-
-
-
-@media(max-width: 430px){
-    .Header {
-        font-size: 3.8em;
-    }
-    .Header:hover{
-        font-size: 3.8em;
-    }
-    .Header:hover::after {
-        bottom: 0em;
-        transform: scaleX(0.6);
-        
-    }
-    .buttons{
-        margin-top: 0em;
-        margin-bottom: 1em;
-    }
-    .gallery{
-        width: 90vw;
-        background-size:150vw;
-    }
-    .genre{
-        width: 90vw;
-        background-size:120vw;
-     }    
-     .author{
-        width: 90vw;
-        background-size:110vw, 100vh;
-     }
-
+@media (hover:none){
+    .genres{ 
+        box-shadow: 0px 0px 60px rgb(32, 32, 32);
+        z-index: 3;
     
-
-}
-
-@media(max-width: 338px){
-    .Header {
-        font-size: 3.8em;
     }
-    .Header:hover{
-        font-size: 3.8em;
-    }
-    .Header:hover::after {
-        bottom: 0em;
-        transform: scaleX(0.6);
-        
-    }
-    .buttons{
-        margin-top: 0em;
-        margin-bottom: 1em;
-    }
-    .gallery{
-        width: 90vw;
-        background-size:180vw;
-    }
-    .genre{
-        width: 90vw;
-        background-size:170vw;
-     }    
-     .author{
-        width: 90vw;
-        background-size:110vw, 100vh;
-     }
 
-    
-
+    .genres .shade_box{
+        opacity: 1; /* Показать текст при наведении */
+    }
 }
 
-.gh_link, .year{
-    height: 0.6em;
-    text-align: center;
-    font-family: "Passions Conflict", serif;
-    font-weight: 400;
-    font-size: 2.8em;
-    font-style: normal;
-    color: var(--color);
-    transition: height 0.4s, font-size 0.4s, margin-top 0.4s;
 
-}
-.year{
-    padding-bottom: 1em;
-}
-.gh_link:hover{
-    height: 0.52em;
-    font-size: 3.2em;
-    color: rgb(91, 140, 189);
-}
-.gh_link:hover + .year{
-    margin-top: 0.2em;
-    font-size: 2em;
-}
-.link{
-    text-decoration: none; 
-    height: inherit;
-    width: inherit;
-}
+
+
+
+
