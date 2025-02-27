@@ -19,9 +19,6 @@ function Home() {
           </div>
           
         </div>
-      
-        <footer className='gh_link'><Link to="https://github.com/kaciel13" className="linkStyle">@kaciel13</Link></footer>
-        <footer className='year'>2025</footer>
       </div>
     );
   }

@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Passions+Conflict&display=swap');
-
+#root{
+    --color: rgb(255, 255, 255);
+}
 .back {
     height: auto;
     width: 100vw;
@@ -61,7 +63,7 @@
     font-weight: 400;
     font-size: 2.8em;
     font-style: normal;
-    color: var(--color);
+    color: white;
     transition: height 0.4s, font-size 0.4s, margin-top 0.4s;
 
 }
@@ -83,7 +85,24 @@
     width: inherit;
 }
 
-
+.shade_box{  /*Полупрозрачный бокс с текстом*/
+    font-family: "Great Vibes", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: var(--color);
+    background-color: rgba(32, 32, 32, 0.623);
+    height: inherit;
+    width: inherit; 
+    font-size: 3em;
+    opacity: 0;
+    transition: opacity ease-out 0.8s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.textbutton{
+    text-align: center;
+}
 
 @media(max-width: 768px){
    .Header {
@@ -97,6 +116,9 @@
        transform: scaleX(0.4);
        
    }
+   .gh_link, .year{
+    font-size: 1.8em;
+    }
 
 }
 
@@ -120,16 +142,18 @@
        transform: scaleX(0.6);
        
    }
-   
+   .gh_link, .year{
+    font-size: 1.5em;
+    }
 
 }
 
 @media(max-width: 338px){
+    .gh_link, .year{
+        font-size: 1.2em;
+    }
     .head{
         height: 4em;
-    }
-    .buttons{
-        margin-top: 0em;
     }
    .Header {
        font-size: 2.8em;
@@ -141,8 +165,8 @@
    .Header:hover::after {
        bottom: 0em;
        transform: scaleX(0.6);
-       
    }
+
 
    
 

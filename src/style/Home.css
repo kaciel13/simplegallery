@@ -1,8 +1,5 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Passions+Conflict&display=swap');
-#root{
-    --color: rgb(255, 255, 255);
-}
+
 
 
 .buttons{
@@ -60,21 +57,7 @@
     align-items: center;
     justify-content: center;
 }
-.shade_box{  /*Полупрозрачный бокс с текстом*/
-    font-family: "Great Vibes", serif;
-    font-weight: 400;
-    font-style: normal;
-    color: var(--color);
-    background-color: rgba(32, 32, 32, 0.623);
-    height: inherit;
-    width: inherit; 
-    font-size: 3em;
-    opacity: 0;
-    transition: opacity ease-out 0.8s;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
+
 
 
 
@@ -114,6 +97,9 @@
     }
 }
 @media(max-width: 768px){
+    .textbutton{
+        font-size: 0.8em;
+    }
     .buttons{
         margin-top: 0em;
     }
@@ -146,9 +132,12 @@
 
 @media(max-width: 430px){
 
-
+    .textbutton{
+        font-size: 0.7em;
+    }
     .buttons{
-        margin-top: 0em;
+        margin-top: 0.5em;
+        margin-bottom: 0.5em;
     }
     .gallery{
         width: 90vw;
@@ -168,6 +157,9 @@
 }
 
 @media(max-width: 338px){
+    .textbutton{
+        font-size: 0.5em;
+    }
     .buttons{
         margin-top: 0em;
     }
