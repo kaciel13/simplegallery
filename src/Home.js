@@ -1,5 +1,5 @@
 import './style/Home.css'
-import { Link } from 'react-router-dom';
+import { Link} from 'react-router-dom';
 
 function Home() {
     return (
@@ -13,7 +13,7 @@ function Home() {
 
           <div className='lowbuttons'>
             <div className='genre'><Link to="/Genres" className='link'><div className='shade_box'><p className='textbutton'>Перейти к жанрам...</p></div></Link></div>
-            <div className='author'><div className='shade_box'><p className='textbutton'>Перейти к авторам...</p></div></div>
+            <div className='author'><Link to="/Authors" className='link'><div className='shade_box'><p className='textbutton'>Перейти к авторам...</p></div></Link></div>
           </div>
           
         </div>

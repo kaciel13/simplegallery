@@ -1,7 +1,7 @@
 import './style/Genres.css'
 import { Link } from 'react-router-dom';
 
-function Genres() {
+function Authors() {
     return (
      
       <div className="back">
@@ -23,5 +23,5 @@ function Genres() {
     );
   }
   
-  export default Genres;
+  export default Authors;
   
