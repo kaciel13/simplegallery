@@ -4,7 +4,7 @@
     align-items: center;
     display: flex;
     width: 100vw;
-    margin-top: 3.9em;
+    margin-top: 5em;
     flex-direction: column;
     margin-bottom: 1em;
     
@@ -52,8 +52,21 @@
 .bg-salvadordali {
     background-image: url("./images/authors/SalvodorDali.jpeg"); 
 }
-
-
+.bg-gustavklimt {
+    background-image: url("./images/authors/GustavKlimt.jpg"); 
+}
+.bg-jacksonpollock {
+    background-image: url("./images/authors/JacksonPollock.jpg"); 
+}
+.bg-fridakahlo {
+    background-image: url("./images/authors/FridaKahlo.jpg"); 
+}
+.bg-edwardmunk {
+    background-image: url("./images/authors/EdwardMunk.jpg"); 
+}
+.bg-anrimatiss {
+    background-image: url("./images/authors/AnriMatiss.jpg"); 
+}
 
 
 

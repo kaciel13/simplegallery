@@ -1,12 +1,12 @@
 import './style/Genres.css'
 import { Link } from 'react-router-dom';
-
 function Genres() {
     return (
      
       <div className="back">
         <div className='head'>
           <header className="Header"><Link to="/" className="linkStyle">Simple Gallery</Link></header>
+          <header className="name-page" >Жанры</header>
         </div>
         <div className='genres-buttons'>
           <div className='row'>
