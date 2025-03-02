@@ -8,9 +8,9 @@ function Authors() {
       <div className="back">
         <div className='head'>
           <header className="Header"><Link to="/" className="linkStyle">Simple Gallery</Link></header>\
-             <header className="name-page" >Авторы</header>
         </div>
         <div className='authors-buttons'>
+        <header className="name-page" >Авторы</header>
           <div className='row'>
             <div className='authors bg-leonardodavinchi'><div className='shade_box'><p className='textbutton'>Леонардо да Винчи</p></div></div>
             <div className='authors bg-vangog' ><div className='shade_box'><p className='textbutton'>Ван Гог</p></div></div>

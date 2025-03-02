@@ -6,9 +6,9 @@ function Genres() {
       <div className="back">
         <div className='head'>
           <header className="Header"><Link to="/" className="linkStyle">Simple Gallery</Link></header>
-          <header className="name-page" >Жанры</header>
         </div>
         <div className='genres-buttons'>
+        <header className="name-page" >Жанры</header>
           <div className='row'>
             <div className='genres bg-scenery'><div className='shade_box'><p className='textbutton'>Пейзажи</p></div></div>
             <div className='genres bg-portret' ><div className='shade_box'><p className='textbutton'>Портреты</p></div></div>

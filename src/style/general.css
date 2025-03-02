@@ -59,15 +59,10 @@
 
 .name-page{
     flex: 0 0 auto;
-    position: absolute;
     font-family: "Great Vibes", serif;
-    right: 0;
-    left: 0;
     font-weight: 600;
     font-style: normal;
     color: rgb(255, 255, 255);
-    margin-top: 0.2em;
-    margin-bottom: 1em;
     font-size: 3.6em;
     height: 3.1;
     text-shadow: 0 0 10px black;
