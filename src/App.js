@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from './Home.js';
 import Genres from './Genres.js'
 import Authors from './Authors.js';
+import Gallery from './Gallery.js'
 function App() {
   
   return (
@@ -13,6 +14,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/Genres" element={<Genres />} />
           <Route path="/Authors" element={<Authors />} />
+          <Route path="/Gallery" element={<Gallery/>}/>
         </Routes>
       </Router>
     

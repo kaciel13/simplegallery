@@ -1,0 +1,38 @@
+.picture-notes{
+
+    height: inherit;
+    align-items: center;
+    display: flex;
+    width: 100vw;
+    flex-direction: column;
+    margin-bottom: 1em;
+    
+}
+
+.row-notes{
+    width: 90vw;  /*Соотношение 1/3 для ширины row/genres*/
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.note{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0);
+    margin-left: 1.25vw;
+    margin-right: 1.25vw;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    width: 20vw;
+    height: 50vh;
+    background-color: rgb(82, 73, 63);
+    display: flex;
+} 
+.img{
+    
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0);
+    background-image: url('./images/gallery.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 25vh;
+    width: 20vw;
+}
