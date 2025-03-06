@@ -17,6 +17,7 @@
 }
 
 .note{
+    flex-direction: column;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0);
     margin-left: 1.25vw;
     margin-right: 1.25vw;
@@ -27,6 +28,12 @@
     background-color: rgb(82, 73, 63);
     display: flex;
 } 
+
+.description{
+    margin-left: 1.4em;
+    color: azure;
+    font-family:'Times New Roman', Times, serif; /*TODO Заменить шрифт на тематический*/
+}
 .img{
     
     box-shadow: 0 0 10px rgba(0, 0, 0, 0);

@@ -11,11 +11,7 @@ function Gallery() {
         <div className='picture-notes'>
         <header className="name-page" >Галерея</header>
           <div className='row-notes'>
-            <div className="note"><div className="img"/></div>
-            <div className="note"><div className="img"/><div className="description"><p>Aвтор: Ван Гог</p></div></div>
-            <div className="note"><div className="img"/></div>
-            <div className="note"><div className="img"/></div>
-            <div className="note"><div className="img"/></div>
+            <div className="note"><div className="img"/><div className="description"><p>Aвтор: Ван Гог</p><p>Жанр: Пейзаж</p></div></div>
           </div>
           
         </div>
