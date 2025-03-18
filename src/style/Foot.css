@@ -1,0 +1,56 @@
+.gh_link, .year{
+    height: 0.6em;
+    text-align: center;
+    font-family: "Passions Conflict", serif;
+    font-weight: 400;
+    font-size: 2.8em;
+    font-style: normal;
+    color: white;
+    transition: height 0.4s, font-size 0.4s, margin-top 0.4s;
+
+}
+.year{
+    padding-bottom: 0.5em;
+}
+.gh_link:hover{
+    height: 0.52em;
+    font-size: 3.2em;
+    color: rgb(91, 140, 189);
+}
+.gh_link:hover + .year{
+    margin-top: 0.2em;
+    font-size: 2em;
+}
+.link{
+    text-decoration: none; /* Убирает подчеркивание */
+    height: inherit;
+    width: inherit;
+}
+
+@media(max-width: 768px){
+    .gh_link, .year{
+     font-size: 1.8em;
+     }
+
+ 
+ }
+ @media(max-width: 768px){
+    .gh_link, .year{
+     font-size: 1.8em;
+     }
+ 
+ }
+ 
+ @media(max-width: 430px){
+    .gh_link, .year{
+     font-size: 1.5em;
+     }
+ 
+ }
+ 
+ @media(max-width: 338px){
+
+     .gh_link, .year{
+         font-size: 1.2em;
+     }
+ }

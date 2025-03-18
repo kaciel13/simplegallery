@@ -1,0 +1,126 @@
+
+.head {
+    text-shadow: 0px 0px 50px rgb(0, 0, 0);
+    height: 7.1em;;
+    text-align: center;
+    
+}
+
+.Header {
+    
+    text-align: center;
+    font-family: "Passions Conflict", serif;
+  
+    font-weight: 300px;
+    font-style: normal;
+    font-size: 6em;
+    color: var(--color);
+    position: relative;
+    display: inline-block;
+    transition: all 0.5s ease;
+}
+
+.Header::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;    
+    bottom: 0; /* Убедитесь, что это значение корректно */
+    height: 2px; /* Толщина подчеркивания */
+    background-color: transparent; /* Убираем фон */
+    border-bottom: 2px solid var(--color); /* Используем границу для подчеркивания */
+    border-radius: 100%; /* Закругляем углы */
+    box-shadow: 0px 0px 50px rgb(0, 0, 0);
+    transform: scaleX(0.6);
+    transition: all 0.5s ease;
+}
+
+.Header:hover::after {
+    bottom: 0.08em;
+    transform: scaleX(0.4);
+    
+}
+.Header:hover{
+    font-size: 6.3em;
+}
+
+.linkStyle {
+    text-decoration: inherit;
+    color: inherit;
+}
+
+.name-page{
+    flex: 0 0 auto;
+    font-family: "Great Vibes", serif;
+    font-weight: 600;
+    font-style: normal;
+    color: rgb(255, 255, 255);
+    font-size: 3.6em;
+    height: 3.1;
+    text-shadow: 0 0 10px black;
+}
+
+@media(max-width: 768px){
+    .head{
+        height: 5.5em;
+    }
+   .Header {
+       font-size: 4em;
+   }
+   .Header:hover{
+       font-size: 4.4em;
+   }
+   .Header:hover::after {
+       bottom: 0.04em;
+       transform: scaleX(0.4);
+       
+   }
+
+
+}
+
+
+
+
+
+
+
+
+
+@media(max-width: 430px){
+
+    .head{
+        height: 4.5em;
+    }
+    .Header {
+        font-size: 3.8em;
+    }
+   .Header:hover{
+       font-size: 3.8em;
+   }
+   .Header:hover::after {
+       bottom: 0em;
+       transform: scaleX(0.6);
+       
+   }
+
+
+}
+
+@media(max-width: 338px){
+    .head{
+        height: 4em;
+    }
+   .Header {
+       font-size: 2.8em;
+   }
+
+   .Header:hover{
+       font-size: 2.8em;
+   }
+   .Header:hover::after {
+       bottom: 0em;
+       transform: scaleX(0.6);
+   }
+
+}
