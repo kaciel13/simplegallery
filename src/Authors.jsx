@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 const Authors = () => {
     return (
      
-      <div className="back">
+
         <div className='authors-buttons'>
         <header className="name-page" >Авторы</header>
           <div className='row'>
@@ -23,7 +23,7 @@ const Authors = () => {
           </div>
           
         </div>
-      </div>
+
     );
   }
   

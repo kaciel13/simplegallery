@@ -4,7 +4,7 @@ import './style/Genres.css'
 function Genres() {
     return (
      
-      <div className="back">
+
         <div className='genres-buttons'>
         <NamePage name='Жанры'/>
           <div className='row'>
@@ -17,7 +17,7 @@ function Genres() {
           </div>
           
         </div>
-      </div>
+
     );
   }
   

@@ -7,8 +7,7 @@ import Header from './Header';
 import Gallery from './Gallery';
 import Authors from "./Authors";
 import Genres from "./Genres";
-
-
+import Card from "./Card";
 const App = () => {
   return (
     <>
@@ -21,6 +20,7 @@ const App = () => {
             <Route path="/Gallery" element={<Gallery/>}/>
             <Route path="/Authors" element={<Authors/>}/>
             <Route path="/Genres" element={<Genres/>}/>
+            <Route path="/Card" element={<Card/>}/>
           </Routes>
         </Router>
       </div>

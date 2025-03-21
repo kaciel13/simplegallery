@@ -1,0 +1,60 @@
+.backCard{
+    height: inherit;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 100vw;
+    margin-bottom: 1em;
+
+
+}
+.bgCard{
+    margin-top: 2%;
+    display: flex;
+    height: auto;
+    width: 90vw;
+}
+.imgCard{
+   
+   background-image: url('../assets/images/genre.jpg');
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: contain;
+   width: 50%;
+   height: auto;
+    
+}
+
+.comment{
+  width: 50%;
+  height: inherit;
+}
+.comName, .comAuthor{
+
+    text-align: center;
+    font-size: 4.3em;
+    font-family: "Great Vibes", serif;
+    font-weight: 300px;
+    font-style: normal;
+    
+
+    background-color: rgb(225, 226, 218);
+    margin-left: 10%;
+}
+.comName{
+
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+    
+
+
+.comm{
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: rgb(225, 226, 218);
+    padding: 1em;
+    font-size: 2.5em;
+    font-family: "Great Vibes", serif;
+    margin-left: 10%;
+}
