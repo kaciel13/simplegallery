@@ -26,12 +26,21 @@
     display: flex; /* Используем flexbox для навигационных ссылок */
     gap: 2vw; /* Расстояние между ссылками */
     z-index: 0; /* Убедитесь, что nav-links ниже заголовка */
-    font-size:2em;
+
     font-family: "Great Vibes", serif;
     font-weight: 300px;
     font-style: normal;
 }
+.nav-link{
+    font-size:2em;
+    transition: 0.4s;
+    text-decoration: inherit;
+    color: inherit;
+}
+.nav-link:hover{
+    font-size: 2.1em;
 
+}
 
 
 .nav-button {
@@ -182,6 +191,9 @@
     .nav-button{
         display:flex;
     }
+    .nav-menu{
+        top:3vh;
+       }
 }
 @media(max-width: 768px){
     .head{
@@ -196,6 +208,7 @@
    .Header:hover::after {
        bottom: 0.04em;
        transform: scaleX(0.4);
+    
        
    }
 
@@ -207,7 +220,7 @@
         font-size:1.2em;
    }
    .nav-menu{
-    top:3vh;
+    top:2vh;
    }
 }
 

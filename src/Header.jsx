@@ -27,9 +27,9 @@ const Header = ({ isGenres = true, isGallery = true, isAuthors = true, isNotMain
                         </div>
                     )}
             <div className="nav-links">
-                {isGallery && <Link to="/gallery" className="linkStyle">Галерея</Link>}
-                {isGenres && <Link to="/genres" className="linkStyle">Жанры</Link>}
-                {isAuthors && <Link to="/authors" className="linkStyle">Авторы</Link>}
+                {isGallery && <Link to="/gallery" className="nav-link">Галерея</Link>}
+                {isGenres && <Link to="/genres" className="nav-link">Жанры</Link>}
+                {isAuthors && <Link to="/authors" className="nav-link">Авторы</Link>}
             </div>
             </>
             )}
