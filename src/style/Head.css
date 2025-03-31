@@ -26,7 +26,7 @@
     display: flex; /* Используем flexbox для навигационных ссылок */
     gap: 2vw; /* Расстояние между ссылками */
     z-index: 0; /* Убедитесь, что nav-links ниже заголовка */
-    font-size:1.8em;
+    font-size:2em;
     font-family: "Great Vibes", serif;
     font-weight: 300px;
     font-style: normal;
