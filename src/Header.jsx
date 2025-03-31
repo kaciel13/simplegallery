@@ -11,7 +11,7 @@ const Header = ({ isGenres = true, isGallery = true, isAuthors = true, isNotMain
     return (
         <div className='head'>
             <header className="Header">
-                <Link to="/" className="linkStyle">Simple Gallery</Link>
+                <Link to="/simplegallery/" className="linkStyle">Simple Gallery</Link>
             </header>
             {isNotMain && (
                 <>
@@ -21,15 +21,15 @@ const Header = ({ isGenres = true, isGallery = true, isAuthors = true, isNotMain
                     {menuOpen && (
                         <div className="nav-menu">
                             <button className='close-but' onClick={openMenu}/>
-                            {isGallery && <Link to="/gallery" className="nav-menu-but">Галерея</Link>}
-                            {isGenres && <Link to="/genres" className="nav-menu-but">Жанры</Link>}
-                            {isAuthors && <Link to="/authors" className="nav-menu-but">Авторы</Link>}
+                            {isGallery && <Link to="/simplegallery/gallery" className="nav-menu-but">Галерея</Link>}
+                            {isGenres && <Link to="/simplegallery/genres" className="nav-menu-but">Жанры</Link>}
+                            {isAuthors && <Link to="/simplegallery/authors" className="nav-menu-but">Авторы</Link>}
                         </div>
                     )}
             <div className="nav-links">
-                {isGallery && <Link to="/gallery" className="nav-link">Галерея</Link>}
-                {isGenres && <Link to="/genres" className="nav-link">Жанры</Link>}
-                {isAuthors && <Link to="/authors" className="nav-link">Авторы</Link>}
+                {isGallery && <Link to="/simplegallery/gallery" className="nav-link">Галерея</Link>}
+                {isGenres && <Link to="/simplegallery/genres" className="nav-link">Жанры</Link>}
+                {isAuthors && <Link to="/simplegallery/authors" className="nav-link">Авторы</Link>}
             </div>
             </>
             )}

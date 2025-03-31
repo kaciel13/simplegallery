@@ -15,11 +15,11 @@ const App = () => {
       <div className='back'>
         <Router>
           <Routes>
-            <Route path="/" element={<><Header isNotMain={false} isGallery={false}/><Home /></>} />
-            <Route path="/Gallery" element={<><Header isGallery={false}/><Gallery/></>}/>
-            <Route path="/Authors" element={<><Header isAuthors={false}/><Authors/></>}/>
-            <Route path="/Genres" element={<><Header isGenres={false}/><Genres/></>}/>
-            <Route path="/Card" element={<><Header/><Card/></>}/>
+            <Route path="/simplegallery/" element={<><Header isNotMain={false} isGallery={false}/><Home /></>} />
+            <Route path="/simplegallery/Gallery" element={<><Header isGallery={false}/><Gallery/></>}/>
+            <Route path="/simplegallery/Authors" element={<><Header isAuthors={false}/><Authors/></>}/>
+            <Route path="/simplegallery/Genres" element={<><Header isGenres={false}/><Genres/></>}/>
+            <Route path="/simplegallery/Card" element={<><Header/><Card/></>}/>
           </Routes>
         </Router>
       </div>
