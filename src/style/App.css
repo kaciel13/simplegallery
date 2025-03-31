@@ -11,7 +11,11 @@
     text-decoration: inherit;
     color: inherit;
 }
-
+.close-but{
+    height: 32px;
+    width: 32px;
+    margin-right: 0;
+}
 .name-page{
     flex: 0 0 auto;
     font-family: "Great Vibes", serif;

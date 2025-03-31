@@ -14,13 +14,12 @@ const App = () => {
 
       <div className='back'>
         <Router>
-        <Header/>
           <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/Gallery" element={<Gallery/>}/>
-            <Route path="/Authors" element={<Authors/>}/>
-            <Route path="/Genres" element={<Genres/>}/>
-            <Route path="/Card" element={<Card/>}/>
+            <Route path="/" element={<><Header isNotMain={false} isGallery={false}/><Home /></>} />
+            <Route path="/Gallery" element={<><Header isGallery={false}/><Gallery/></>}/>
+            <Route path="/Authors" element={<><Header isAuthors={false}/><Authors/></>}/>
+            <Route path="/Genres" element={<><Header isGenres={false}/><Genres/></>}/>
+            <Route path="/Card" element={<><Header/><Card/></>}/>
           </Routes>
         </Router>
       </div>
